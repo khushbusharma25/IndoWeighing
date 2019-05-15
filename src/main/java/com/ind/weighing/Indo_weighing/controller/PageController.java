@@ -28,7 +28,7 @@ public class PageController {
 	}
 	@GetMapping("/error")
 	public String error() {
-		System.out.println("Error page");
+		
 		return "/login-error";
 	}
 	
