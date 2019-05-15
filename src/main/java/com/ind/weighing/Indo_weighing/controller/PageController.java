@@ -34,8 +34,7 @@ public class PageController {
 	
 	@RequestMapping(value = "/authenticate", method = RequestMethod.GET)
 	public String authenticate(Model model, String error, String logout) {
-		System.out.println("bcubcuasgcjugcighaicghsaigsa---------------------------------------------------------"+error);
-        if (error != null)
+		if (error != null)
             model.addAttribute("error", "Your username and password is invalid.");
 
         if (logout != null)
