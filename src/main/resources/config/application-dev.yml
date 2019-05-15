@@ -1,0 +1,16 @@
+jwt:
+    header: Authorization
+    secret: mySecret
+    expiration: 604800
+    route:
+        authentication:
+            path: auth
+            refresh: refresh
+            
+            
+application:
+      indodb:
+           driver-name: com.mysql.jdbc.Driver
+           wsurl: jdbc:mysql://localhost:3306/indodb
+           wsurl-username: root
+           wsurl-password: mysql

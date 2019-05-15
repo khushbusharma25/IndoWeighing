@@ -1,0 +1,16 @@
+<h3>{{msg}}</h3>
+<div ng-if= "products !=null" class= "row">
+		<div ng-repeat="x in products">
+				<div class="productImg">
+					<img  src="img/{{x.productImgUrl}}" class="img-rounded"><br>
+				
+				<div class="pDiscription">
+					<span>{{x.productName}} </span> <br>
+					<span>Price: Rs. {{x.price}}</span> <br>
+					<span>weight: {{x.weight}} kg</span> <br>
+					<button ng-click="addToCart(x.pId)" class="cartButton">add to cart</button>
+				</div>
+				</div>
+			
+		</div>
+</div>

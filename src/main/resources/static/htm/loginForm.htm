@@ -1,0 +1,31 @@
+<div class="modal-header">
+    <h3>Login!</h3>
+   
+</div>
+ <p></p>
+<form name="form.userForm" ng-submit="submitForm(user)" novalidate>
+    <div class="modal-body">
+     
+        
+
+        <!-- USERNAME -->
+        <div class="form-group">
+            <label>Username</label>
+            <input type="text" name="username" class="form-control" ng-model="user.username"  required>
+            <p ng-show="form.userForm.username.$invalid && !form.userForm.username.$pristine" class="help-block" class="help-block">Enter a valid username.</p>
+        </div>
+
+        <!-- pssword -->
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" name="password" class="form-control" ng-model="user.password" required>
+            <p ng-show="form.userForm.password.$invalid && !form.userForm.passowrd.$pristine" class="help-block" class="help-block">Enter a valid password.</p>
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="submit" class="btn btn-primary" ng-disabled="form.userForm.$invalid">OK</button>
+        <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+    </div>
+    
+    </form>
