@@ -33,9 +33,7 @@ public class JWTUtils implements Serializable{
     static final String CLAIM_MAC_ID = "macId";
 	
     static final String AUDIENCE_UNKNOWN = "unknown";
-    static final String AUDIENCE_WEB = "web";
-    static final String AUDIENCE_MOBILE = "mobile";
-    static final String AUDIENCE_TABLET = "tablet";
+    
     
    
     
