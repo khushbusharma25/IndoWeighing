@@ -36,7 +36,7 @@ public class PageController {
 	public String authenticate(Model model, String error, String logout) {
 		if (error != null)
             model.addAttribute("error", "Your username and password is invalid.");
-
+//sysout("Hello");
         if (logout != null)
             model.addAttribute("message", "You have been logged out successfully.");
 
